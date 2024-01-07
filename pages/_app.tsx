@@ -5,10 +5,9 @@ import Link from 'next/link'
 
 export default function App({ Component, pageProps }: AppProps) {
 
-  console.log("sogeogisajglkdsflk aslkf lsdkf l;sakf lskdfjla;skdf ")
   return <>
-         <div>
-          <ul>
+         <div className='w-screen'>
+          <ul className='flex gap-3 text-3xl justify-center w-full items-center'>
             <Link href="/"><li>home</li></Link>
             <Link href="/about"><li>about</li></Link>
             <Link href="/blog"><li>blog</li></Link>
