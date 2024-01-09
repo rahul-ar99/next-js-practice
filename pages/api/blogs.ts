@@ -2,6 +2,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import * as fs from 'fs'
 import { json } from 'stream/consumers'
+import { useEffect } from 'react'
 
 type Data = {
   name: string
@@ -11,6 +12,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
+
 
 
     let data = await fs.promises.readdir("blogdata");
