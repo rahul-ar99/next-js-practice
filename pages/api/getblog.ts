@@ -13,7 +13,7 @@ export default function handler(
 ) {
     fs.readFile(`blogdata/${req.query.slug}.json`,'utf-8',(err,data)=>{
         if(err){
-            res.status(500).json({error:"internal server error"})
+            res.status(500).json( {error: "internal server error"} )
         }
 		
 		console.log (req.query.slug);
