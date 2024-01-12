@@ -23,7 +23,7 @@ const blog = () => {
                 {blogs.map((blogitem)=>{
 
                     return <>
-                        <Link key={blogitem.title} href={`api/getblog?slug=${blogitem.slug}`}>
+                        <Link key={blogitem.title} href={`blogpost/${blogitem.slug}`}>
                             <li>{blogitem.title}
                                 <p>{blogitem.content.substr(0,100)}...</p>
                             </li>
