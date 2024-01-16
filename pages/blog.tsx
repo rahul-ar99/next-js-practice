@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import Link from 'next/link';
 
 const blog = () => {
+    // testing
 
     const [blogs, setBlogs] = useState([])
 
